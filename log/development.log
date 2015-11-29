@@ -990,3 +990,567 @@ Migrating to AddPasswordDigestToUsers (20151129044854)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+
+
+Started GET "/" for ::1 at 2015-11-29 00:28:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (133.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 2550ms (Views: 2535.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-e114da6226a8340c07433486e3d1c654fd3c8c87a42fbb82130c8f7e23c180b2.css?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/microposts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/scaffolds.self-2ad5270e817e07add642b0949591ebbd8dd3dc15fd100d8008a5ff08de83a442.css?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/microposts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-29 00:28:52 -0500
+
+
+Started GET "/images/rails.png" for ::1 at 2015-11-29 00:28:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (51.0ms)
+
+
+Started GET "/signup" for ::1 at 2015-11-29 00:28:56 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (293.7ms)
+  Rendered users/new.html.erb within layouts/application (296.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 396ms (Views: 382.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2015-11-29 00:28:58 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1ZKGdrvHAsxXpH90Sqm1E2JrMkDn/K35ONzQjuunPGWKpUMZ9/bgPN64MWkteGvk1idQzPuFaJ/LSi0c8QM2eQ==", "user"=>{"name"=>"", "email"=>""}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (5.1ms)
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 219ms (Views: 189.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-29 00:29:02 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 99ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/rails.png" for ::1 at 2015-11-29 00:29:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (42.6ms)
+
+
+Started GET "/users/1" for ::1 at 2015-11-29 00:35:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 511ms (Views: 461.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/2" for ::1 at 2015-11-29 00:35:55 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 95ms (Views: 93.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/3" for ::1 at 2015-11-29 00:35:58 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 154ms (Views: 152.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for ::1 at 2015-11-29 00:36:01 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=4):
+  app/controllers/users_controller.rb:68:in `set_user'
+
+
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.6ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (39.6ms)
+
+
+Started GET "/users/3" for ::1 at 2015-11-29 00:36:05 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 96ms (Views: 94.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/3" for ::1 at 2015-11-29 00:36:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered users/show.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (16.5ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 40765ms (Views: 1363.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/microposts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/custom.self-e114da6226a8340c07433486e3d1c654fd3c8c87a42fbb82130c8f7e23c180b2.css?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/scaffolds.self-2ad5270e817e07add642b0949591ebbd8dd3dc15fd100d8008a5ff08de83a442.css?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/microposts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-29 00:37:29 -0500
+
+
+Started GET "/users/3" for ::1 at 2015-11-29 00:44:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 2607ms (Views: 2557.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/microposts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/scaffolds.self-2ad5270e817e07add642b0949591ebbd8dd3dc15fd100d8008a5ff08de83a442.css?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/custom.self-286dcdf04a7efbe4f1640265ee9402fc81cab5f3f4a936a0d8fdec4367d9d3e9.css?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/microposts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-29 00:44:07 -0500
+
+
+Started GET "/" for ::1 at 2015-11-29 00:44:11 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/rails.png" for ::1 at 2015-11-29 00:44:11 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (38.8ms)
+
+
+Started GET "/signup" for ::1 at 2015-11-29 00:44:18 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (371.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 461ms (Views: 460.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2015-11-29 10:00:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/Users/Christopher/Dev/TMS_System/app/controllers/users_controller.rb:73: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/users_controller.rb:73: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (15.0ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (63.0ms)
+
+
+Started GET "/signup" for ::1 at 2015-11-29 10:01:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (4.7ms)
+  Rendered users/new.html.erb within layouts/application (380.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 2771ms (Views: 2747.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.self-2a5c047069b50e140d6186c7531f1354693b8097b0706d2be1775f18d05892ed.css?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/microposts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/scaffolds.self-2ad5270e817e07add642b0949591ebbd8dd3dc15fd100d8008a5ff08de83a442.css?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/turbolinks.self-c846e670826600e8c91b1a5ada3e6547110d996cd6ff24cde55024f7a135a1b4.js?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/microposts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-29 10:01:18 -0500
+
+
+Started GET "/" for ::1 at 2015-11-29 10:01:22 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/rails.png" for ::1 at 2015-11-29 10:01:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (33.2ms)
+
+
+Started GET "/signup" for ::1 at 2015-11-29 10:01:23 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-11-29 10:01:34 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ud6Y1MG8QQSfqM46Em/cHL5Ma4s5lrMcvkm8icJUrEAO6V27jY2j9Ba0gCd1vgLrCgAJByXvdnpN30Eb2PCmXA==", "user"=>{"name"=>"test", "email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('test@test.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 317ms (Views: 186.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for ::1 at 2015-11-29 10:01:46 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CgIw7xsa+b7VFaVti2EpYmHTtAjD5+bBixwpkObuPmFVNfWAVysbTlwJ63DssPeV1Z/WhN+eI6d4itQC/Eo0fQ==", "user"=>{"name"=>"test", "email"=>"test@testr.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('test@testr.com') LIMIT 1
+  [1m[36mSQL (9.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["email", "test@testr.com"], ["password_digest", "$2a$10$rdKOgWwR3oHjMUN/HZDgsuTC3LE3p71yjZwRJSAkU.85gLVqyFVcy"], ["created_at", "2015-11-29 15:01:46.648026"], ["updated_at", "2015-11-29 15:01:46.648026"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 124ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/users/4" for ::1 at 2015-11-29 10:01:46 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 142ms (Views: 131.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-11-29 10:01:50 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 110ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/rails.png" for ::1 at 2015-11-29 10:01:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/rails.png"):
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0.beta3) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.2) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.2) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/Christopher/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (27.4ms)
