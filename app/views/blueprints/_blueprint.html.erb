@@ -1,0 +1,8 @@
+<li id="blueprint-<%= blueprint.id %>">
+  <%= link_to gravatar_for(blueprint.user, size: 50), blueprint.user %>
+  <span class="user"><%= link_to blueprint.user.name, blueprint.user %></span>
+  <span class="content"><%= blueprint.minStudents %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(blueprint.created_at) %> ago.
+  </span>
+</li>

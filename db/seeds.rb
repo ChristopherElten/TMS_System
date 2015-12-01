@@ -22,3 +22,8 @@ User.create!(name:  "Example User",
                password:              password,
                password_confirmation: password)
 end
+
+users = User.order(:created_at).take(6)
+50.times do
+  users.each { |user| user.blueprints.create!(coursecode: "12343", minStudents: 5, maxStudents: 7) }
+end

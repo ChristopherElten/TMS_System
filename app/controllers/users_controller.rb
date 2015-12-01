@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
+    @blueprints = @user.blueprints.paginate(page: params[:page])
   end
 
   def new
@@ -46,21 +47,22 @@ class UsersController < ApplicationController
 
   private
 
+    # Allowing admin modifications for testing purposes
     def user_params
       params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
+                                   :password_confirmation, :admin)
     end
 
     # Before filters
 
     # Confirms a logged-in user.
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:danger] = "Please log in."
-        redirect_to login_url
-      end
-    end
+    # def logged_in_user
+    #   unless logged_in?
+    #     store_location
+    #     flash[:danger] = "Please log in."
+    #     redirect_to login_url
+    #   end
+    # end
 
     # Confirms the correct user.
     def correct_user

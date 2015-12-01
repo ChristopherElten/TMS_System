@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coursecode: MyString
+  maxStudents: 1
+  minStudents: 1
+  deadline: 2015-11-30
+  user_id: 
+
+two:
+  coursecode: MyString
+  maxStudents: 1
+  minStudents: 1
+  deadline: 2015-11-30
+  user_id: 

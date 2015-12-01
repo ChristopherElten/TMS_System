@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151129231717) do
+ActiveRecord::Schema.define(version: 20151201021617) do
+
+  create_table "blueprints", force: :cascade do |t|
+    t.string   "coursecode"
+    t.integer  "maxStudents"
+    t.integer  "minStudents"
+    t.date     "deadline"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "blueprints", ["user_id", "created_at"], name: "index_blueprints_on_user_id_and_created_at"
+  add_index "blueprints", ["user_id"], name: "index_blueprints_on_user_id"
 
   create_table "microposts", force: :cascade do |t|
     t.text     "content"

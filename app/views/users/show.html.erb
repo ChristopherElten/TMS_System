@@ -8,4 +8,19 @@
       </h1>
     </section>
   </aside>
+  <% if @user.admin %>
+        <h3>Instructor Privileges Enables</h3>
+
+  <div class="col-md-8">
+    <% if @user.blueprints.any? %>
+      <h3>Blueprints (<%= @user.blueprints.count %>)</h3>
+      <ol class="blueprints">
+        <%= render @blueprints %>
+      </ol>
+      <%= will_paginate @blueprints %>
+    <% end %>
+  </div>
+
+  <%end%>
+
 </div>

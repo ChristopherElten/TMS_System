@@ -1,0 +1,17 @@
+<%= form_for(@blueprint) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_field :coursecode, placeholder: "Course-Code" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :minStudents, placeholder: "Minimum Number of Students" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :maxStudents, placeholder: "Maximum Number of Students" %>
+  </div>
+  <div class="field">
+    <%= f.date_field :deadline, placeholder: "Deadline" %>
+  </div>
+
+  <%= f.submit "Post", class: "btn btn-primary" %>
+<% end %>
